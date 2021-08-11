@@ -10,8 +10,8 @@ CREATE TABLE PERSONAGEM (
 	nomePersonagem VARCHAR(15) NOT NULL UNIQUE,
 	qtdMaxVida TINYINT NOT NULL UNIQUE,
 	qtdMaxMana TINYINT NOT NULL UNIQUE,
-	dataAtualizacao DATE NOT NULL UNIQUE,
-	dataCriacao DATE NOT NULL UNIQUE
+	dataAtualizacao DATE NOT NULL,
+	dataCriacao DATE NOT NULL 
 );
 GO
 
@@ -37,6 +37,7 @@ GO
 
 CREATE TABLE TIPOHABILIDADE (
 	idTipoHabilidade TINYINT PRIMARY KEY IDENTITY(1,1),
-	tipoHabilidade VARCHAR(20)
+	tipoHabilidade VARCHAR(20) NOT NULL,
+	valor TINYINT NOT NULL
 );
 GO
