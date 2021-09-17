@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace senai_hroads_webAPI.Domain
+namespace senai_hroads_webAPI.Domains
 {
     public partial class Tipohabilidade
     {
