@@ -1,4 +1,5 @@
-﻿using senai_hroads_webAPI.Domains;
+﻿using senai_hroads_webAPI.Contexts;
+using senai_hroads_webAPI.Domains;
 using senai_hroads_webAPI.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ namespace senai_hroads_webAPI.Repositories
 {
     public class ClasseRepository : IClasseRepository
     {
+        HroadsContext ctx = new HroadsContext();
         public void AtualizarIdUrl(int idClasse, Tipousuario classeAtualizada)
         {
             throw new NotImplementedException();
@@ -31,7 +33,7 @@ namespace senai_hroads_webAPI.Repositories
 
         public List<Classe> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Classes.ToList<>
         }
     }
 }

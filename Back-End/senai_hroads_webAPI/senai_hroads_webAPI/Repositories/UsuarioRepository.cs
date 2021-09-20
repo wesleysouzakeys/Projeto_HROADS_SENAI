@@ -7,29 +7,34 @@ using System.Threading.Tasks;
 
 namespace senai_hroads_webAPI.Repositories
 {
-    public class HabilidadeRepository : IHabilidadeRepository
+    public class UsuarioRepository : IUsuarioRepository
     {
-        public void AtualizarIdUrl(int idHabilidade, Habilidade habilidadeAtualizada)
+        public void AtualizarIdUrl(int idUsuario, Usuario usuarioAtualizado)
         {
             throw new NotImplementedException();
         }
 
-        public Habilidade BuscarPorId(int habilidade)
+        public Tipousuario BuscarPorId(int idUsuario)
         {
             throw new NotImplementedException();
         }
 
-        public void Cadastrar(Habilidade novaHabilidade)
+        public void Cadastrar(Tipousuario novoUsuario)
         {
             throw new NotImplementedException();
         }
 
-        public void Deletar(int habilidade)
+        public void Deletar(int idUsuario)
         {
             throw new NotImplementedException();
         }
 
-        public List<Habilidade> Listar()
+        public List<Usuario> Listar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Usuario Login(string email, string senha)
         {
             throw new NotImplementedException();
         }
