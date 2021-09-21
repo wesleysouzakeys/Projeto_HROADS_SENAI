@@ -11,29 +11,44 @@ namespace senai_hroads_webAPI.Repositories
     public class ClasseRepository : IClasseRepository
     {
         HroadsContext ctx = new HroadsContext();
-        public void AtualizarIdUrl(int idClasse, Tipousuario classeAtualizada)
+        public void AtualizarIdUrl(int idClasse, Classe classeAtualizada)
         {
-            throw new NotImplementedException();
+            Classe classeBuscada = ctx.Classes.Find(idClasse);
+
+            if (classeAtualizada.NomeClasse != null)
+            {
+                classeBuscada.NomeClasse = classeAtualizada.NomeClasse;
+            }
+
+            ctx.Classes.Update(classeBuscada);
+
+            ctx.SaveChanges();
         }
 
         public Classe BuscarPorId(int idClasse)
         {
-            throw new NotImplementedException();
+            return ctx.Classes.FirstOrDefault(e => e.IdClasse == idClasse);
         }
 
         public void Cadastrar(Classe novaClasse)
         {
-            throw new NotImplementedException();
+            ctx.Classes.Add(novaClasse);
+
+            ctx.SaveChanges();
         }
 
         public void Deletar(int idClasse)
         {
-            throw new NotImplementedException();
+            Classe classeBuscada = ctx.Classes.Find(idClasse);
+
+            ctx.Classes.Remove(classeBuscada);
+
+            ctx.SaveChanges();
         }
 
         public List<Classe> Listar()
         {
-            return ctx.Classes.ToList<>
+            return ctx.Classes.ToList();
         }
     }
 }

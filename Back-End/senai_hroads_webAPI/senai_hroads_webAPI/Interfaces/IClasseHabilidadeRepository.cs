@@ -10,8 +10,8 @@ namespace senai_hroads_webAPI.Interfaces
     {
         List<Classehabilidade> Listar();
         Classehabilidade BuscarPorId(int idClasseHabilidade);
-        void AtualizarIdUrl(int idClasseHabilidade, Tipousuario classeHabilidadeAtualizada);
-        void Cadastrar(Classe novaClasseHabilidade);
+        void AtualizarIdUrl(int idClasseHabilidade, Classehabilidade classeHabilidadeAtualizada);
+        void Cadastrar(Classehabilidade novaClasseHabilidade);
         void Deletar(int idClasseHabilidade);
     }
 }
