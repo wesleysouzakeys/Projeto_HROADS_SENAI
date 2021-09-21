@@ -1,4 +1,5 @@
-﻿using senai_hroads_webAPI.Domains;
+﻿using senai_hroads_webAPI.Contexts;
+using senai_hroads_webAPI.Domains;
 using senai_hroads_webAPI.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,29 +10,46 @@ namespace senai_hroads_webAPI.Repositories
 {
     public class HabilidadeRepository : IHabilidadeRepository
     {
+        HroadsContext ctx = new HroadsContext();
         public void AtualizarIdUrl(int idHabilidade, Habilidade habilidadeAtualizada)
         {
-            throw new NotImplementedException();
+            Habilidade habilidadeBuscada = ctx.Habilidades.Find(idHabilidade);
+
+            if (habilidadeAtualizada.IdTipoHabilidade != 0 && habilidadeAtualizada.NomeHabilidade != null)
+            {
+                habilidadeBuscada.IdTipoHabilidade = habilidadeAtualizada.IdTipoHabilidade;
+                habilidadeBuscada.NomeHabilidade = habilidadeAtualizada.NomeHabilidade;
+            }
+
+            ctx.Habilidades.Update(habilidadeBuscada);
+
+            ctx.SaveChanges();
         }
 
-        public Habilidade BuscarPorId(int habilidade)
+        public Habilidade BuscarPorId(int idHabilidade)
         {
-            throw new NotImplementedException();
+            return ctx.Habilidades.FirstOrDefault(h => h.IdHabilidade == idHabilidade);
         }
 
         public void Cadastrar(Habilidade novaHabilidade)
         {
-            throw new NotImplementedException();
+            ctx.Habilidades.Add(novaHabilidade);
+
+            ctx.SaveChanges();
         }
 
-        public void Deletar(int habilidade)
+        public void Deletar(int idHabilidade)
         {
-            throw new NotImplementedException();
+            Habilidade habilidadeBuscada = ctx.Habilidades.Find(idHabilidade);
+
+            ctx.Habilidades.Remove(habilidadeBuscada);
+
+            ctx.SaveChanges();
         }
 
         public List<Habilidade> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Habilidades.ToList();
         }
     }
 }

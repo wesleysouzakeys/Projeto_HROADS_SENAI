@@ -1,4 +1,5 @@
-﻿using senai_hroads_webAPI.Domains;
+﻿using senai_hroads_webAPI.Contexts;
+using senai_hroads_webAPI.Domains;
 using senai_hroads_webAPI.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,29 +10,54 @@ namespace senai_hroads_webAPI.Repositories
 {
     public class PersonagemRepository : IPersonagemRepository
     {
+        HroadsContext ctx = new HroadsContext();
         public void AtualizarIdUrl(int idPersonagem, Personagem personagemAtualizado)
         {
-            throw new NotImplementedException();
+            Personagem personagemBuscado = ctx.Personagens.Find(idPersonagem);
+            DateTime dataNula = Convert.ToDateTime("01/01/0001");
+
+            if (personagemBuscado.IdClasseHabi != 0 && personagemBuscado.NomePersonagem != null 
+                && personagemBuscado.QtdMaxVida != 0 && personagemBuscado.QtdMaxMana != 0 
+                && personagemBuscado.DataAtualizacao != dataNula 
+                && personagemBuscado.DataCriacao != dataNula)
+            {
+                personagemBuscado.IdClasseHabi = personagemAtualizado.IdClasseHabi;
+                personagemBuscado.NomePersonagem = personagemAtualizado.NomePersonagem;
+                personagemBuscado.QtdMaxVida = personagemAtualizado.QtdMaxVida;
+                personagemBuscado.QtdMaxMana = personagemAtualizado.QtdMaxMana;
+                personagemBuscado.DataAtualizacao = personagemAtualizado.DataAtualizacao;
+                personagemBuscado.DataCriacao = personagemAtualizado.DataCriacao;
+            }
+
+            ctx.Personagens.Update(personagemBuscado);
+
+            ctx.SaveChanges();
         }
 
         public Personagem BuscarPorId(int idPersonagem)
         {
-            throw new NotImplementedException();
+            return ctx.Personagens.FirstOrDefault(p => p.IdPersonagem == idPersonagem);
         }
 
         public void Cadastrar(Personagem novoPersonagem)
         {
-            throw new NotImplementedException();
+            ctx.Personagens.Add(novoPersonagem);
+
+            ctx.SaveChanges();
         }
 
         public void Deletar(int idPersonagem)
         {
-            throw new NotImplementedException();
+            Personagem personagemBuscado = ctx.Personagens.Find(idPersonagem);
+
+            ctx.Personagens.Remove(personagemBuscado);
+
+            ctx.SaveChanges();
         }
 
         public List<Personagem> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Personagens.ToList();
         }
     }
 }

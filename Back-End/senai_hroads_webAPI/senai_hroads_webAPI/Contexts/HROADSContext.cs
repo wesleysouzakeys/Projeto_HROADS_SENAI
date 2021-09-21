@@ -21,7 +21,7 @@ namespace senai_hroads_webAPI.Contexts
         public virtual DbSet<Classe> Classes { get; set; }
         public virtual DbSet<Classehabilidade> Classehabilidades { get; set; }
         public virtual DbSet<Habilidade> Habilidades { get; set; }
-        public virtual DbSet<Personagem> Personagems { get; set; }
+        public virtual DbSet<Personagem> Personagens { get; set; }
         public virtual DbSet<Tipohabilidade> Tipohabilidades { get; set; }
         public virtual DbSet<Tipousuario> Tipousuarios { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }

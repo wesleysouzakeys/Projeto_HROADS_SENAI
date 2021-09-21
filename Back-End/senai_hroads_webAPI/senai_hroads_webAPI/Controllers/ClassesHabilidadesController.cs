@@ -13,11 +13,11 @@ namespace senai_hroads_webAPI.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    public class ClasseHabilidadeController : ControllerBase
+    public class ClassesHabilidadesController : ControllerBase
     {
         private IClasseHabilidadeRepository _classeHabilidadeRepository { get; set; }
 
-        public ClasseHabilidadeController()
+        public ClassesHabilidadesController()
         {
             _classeHabilidadeRepository = new ClasseHabilidadeRepository();
         }

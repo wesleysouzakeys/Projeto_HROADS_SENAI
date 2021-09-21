@@ -14,11 +14,11 @@ namespace senai_hroads_webAPI.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-    public class ClasseController : ControllerBase
+    public class ClassesController : ControllerBase
     {
         private IClasseRepository _classeRepository { get; set; } 
 
-        public ClasseController()
+        public ClassesController()
         {
             _classeRepository = new ClasseRepository();
         }
