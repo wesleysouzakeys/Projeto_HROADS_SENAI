@@ -48,6 +48,7 @@ namespace senai_hroads_webAPI
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
             });
 
             if (env.IsDevelopment())

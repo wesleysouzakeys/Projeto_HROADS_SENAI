@@ -4,11 +4,5 @@
         <name>senai_hroads_webAPI</name>
     </assembly>
     <members>
-        <member name="M:senai_hroads_webAPI.Controllers.ClassesController.Listar">
-            <summary>
-            teste de como funciona
-            </summary>
-            <returns></returns>
-        </member>
     </members>
 </doc>
