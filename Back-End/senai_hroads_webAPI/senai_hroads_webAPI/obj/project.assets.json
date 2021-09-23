@@ -7546,19 +7546,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cliente\\.nuget\\packages\\": {}
+    "C:\\Users\\fic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cliente\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Projeto_HROADS_SENAI\\Back-End\\senai_hroads_webAPI\\senai_hroads_webAPI\\senai_hroads_webAPI.csproj",
+      "projectUniqueName": "C:\\Users\\fic\\Desktop\\Projeto_HROADS_SENAI\\Back-End\\senai_hroads_webAPI\\senai_hroads_webAPI\\senai_hroads_webAPI.csproj",
       "projectName": "senai_hroads_webAPI",
-      "projectPath": "C:\\Users\\cliente\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Projeto_HROADS_SENAI\\Back-End\\senai_hroads_webAPI\\senai_hroads_webAPI\\senai_hroads_webAPI.csproj",
-      "packagesPath": "C:\\Users\\cliente\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cliente\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Projeto_HROADS_SENAI\\Back-End\\senai_hroads_webAPI\\senai_hroads_webAPI\\obj\\",
+      "projectPath": "C:\\Users\\fic\\Desktop\\Projeto_HROADS_SENAI\\Back-End\\senai_hroads_webAPI\\senai_hroads_webAPI\\senai_hroads_webAPI.csproj",
+      "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fic\\Desktop\\Projeto_HROADS_SENAI\\Back-End\\senai_hroads_webAPI\\senai_hroads_webAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cliente\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7624,13 +7624,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\cliente\\OneDrive - SESISENAISP - Escolas\\Área de Trabalho\\Projeto_HROADS_SENAI\\Back-End\\senai_hroads_webAPI\\senai_hroads_webAPI\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
