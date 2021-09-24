@@ -8,10 +8,10 @@ namespace senai_hroads_webAPI.LoginViewModels
 {
     public class LoginViewModel
     {
-        [Required(ErrorMessage = "O E-Mail é obrigatório!")]
+        [Required(ErrorMessage = "Informe o E-Mail do Usuario!")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "A Senha é obrigatória")]
+        [Required(ErrorMessage = "Informe a Senha do Usuario!")]
         public string Senha { get; set; }
     }
 }

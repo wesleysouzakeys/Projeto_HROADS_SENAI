@@ -7,6 +7,8 @@ SELECT * FROM CLASSE;
 SELECT * FROM HABILIDADE;
 SELECT * FROM CLASSEHABILIDADE;
 SELECT * FROM PERSONAGEM;
+SELECT * FROM USUARIO;
+SELECT * FROM TIPOUSUARIO;
 */
 
 --Para consulta dos INSERTs apenas.
@@ -39,4 +41,12 @@ GO
 UPDATE PERSONAGEM
 SET nomePersonagem = 'Fer7'
 WHERE nomePersonagem = 'Fer8';
+GO
+
+INSERT INTO USUARIO (idTipoUsuario, email, senha)
+VALUES (1, 'adm@adm.com', 'adm123'), (2, 'user@user.com', 'user123');
+GO
+
+INSERT INTO TIPOUSUARIO (tipoUsuario)
+VALUES ('administrador'), ('comum');
 GO
