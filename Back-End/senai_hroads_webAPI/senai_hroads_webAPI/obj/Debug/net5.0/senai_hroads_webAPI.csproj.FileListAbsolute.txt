@@ -141,7 +141,6 @@ C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROA
 C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -179,3 +178,4 @@ C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROA
 C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\obj\Debug\net5.0\senai_hroads_webAPI.xml
 C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\obj\Debug\net5.0\senai_hroads_webAPI.pdb
 C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\obj\Debug\net5.0\senai_hroads_webAPI.genruntimeconfig.cache
+C:\Users\cliente\OneDrive - SESISENAISP - Escolas\Área de Trabalho\Projeto_HROADS_SENAI\Back-End\senai_hroads_webAPI\senai_hroads_webAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
